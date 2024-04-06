@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+<form action="/add-blog" method="post" class="add-blog">
+    <label for="title">Title</label>
+    <textarea name="title" class="new-title" required autofocus></textarea>
+    <label for="content">Content</label>
+    <textarea name="content" class="new-content" required></textarea>
+    <div class="submit-buttons">
+        <button type="submit" class="action">Submit</button>
+        <a href="/" class="action">Cancel</a>
+    </div>
+</form>

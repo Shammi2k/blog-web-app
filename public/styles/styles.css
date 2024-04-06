@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 19fr;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background: #662d91;
+    font-size: 1.2rem;
+}
+
+main {
+    background: #E6E6FA;
+    padding: 1rem 5rem;
+}
+
+.blog-list > li, .blog-details {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    border-bottom: 1px solid #DDA0DD;
+    background:#D8BFD8;
+    box-shadow: 0 4px 8px 0 #DDA0DD, 0 6px 20px 0 hsl(240, 67%, 94%);
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+
+.blog-date {
+    grid-column: span 10;
+    color: #1d1160;
+}
+
+.blog-title {
+    grid-column: span 8;
+    font-size: 2rem;
+    color: #4B0082;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.action {
+    background: none;
+    border: none;
+    color: blueviolet;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.blog-content {
+    color: #720e9e;
+    grid-column: span 10;
+    margin: 1rem 0;
+}
+
+i {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    width:100%;
+}
+
+i:hover {
+    transform: scale(1.3);
+    color: purple;
+    transition: transform 0.1s ease-in-out;
+}
+
+.new-button {
+    width:3rem;
+}
+
+.new-button:hover {
+    color:#DDA0DD;
+    transform: scale(1.3);
+    transition: transform 0.1s ease-in-out;
+}
+
+.add-blog > textarea {
+    width: 90%;
+    display: block;
+    resize: none;
+    margin: 1rem 0;
+    background-color: rgb(252, 243, 243);
+    white-space: pre-wrap;
+}
+
+.add-blog > label {
+    font-weight: 600;
+}
+
+.new-title {
+    height:100px;
+}
+
+.new-content {
+    height:400px;
+}
+
+.submit-buttons {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-top: 3rem;
+}
+
+.submit-buttons > * {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}

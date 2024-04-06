@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+<div class="blog-details">
+    <h2 class="blog-title"><%= blog.title %></h2>
+    <a href="/update-blog/<%= blog.id %>" class="blog-action action"><i class="fa-solid fa-pen"></i></a>
+    <form action="/delete-blog" method="post" class="blog-action">
+        <input type="hidden" name="blogId" value=<%= blog.id %>> 
+        <button type="submit" class="action"><i class="fa-solid fa-trash"></i></button>
+    </form>
+    <div class="blog-date">Last updated on <%= blog.metaData.creationTime.toDateString() %></div>
+    <div class="blog-content">
+        <%= blog.content %>
+    </div>
+</div>
+</main>
+</body>
+</html>

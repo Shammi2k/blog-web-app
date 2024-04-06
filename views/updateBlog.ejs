@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+<form action="/confirm-update" method="post" class="add-blog">
+    <input type="hidden" name="blogId" value="<%= blog.id %>">
+    <label for="title">Title</label>
+    <textarea name="title" class="new-title" required autofocus><%= blog.title %></textarea>
+    <label for="content">Content</label>
+    <textarea name="content" class="new-content" required><%= blog.content %></textarea>
+    <div class="submit-buttons">
+        <button type="submit" class="action">Update</button>
+        <a href="/blogs/<%= blog.id %>" class="action">Cancel</a>
+    </div>
+</form>
